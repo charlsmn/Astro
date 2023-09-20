@@ -1,8 +1,10 @@
 ---
+import Greeting from "../components/Greegint";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>Mi impresionante subtítulo del blog</h2>
+  <Greeting client:load messages={["Hola", "Que tal", "Hola a todos"]} />
 </BaseLayout>
